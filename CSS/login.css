@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rubik+Bubbles&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.loginzone {
+    background-color: rgb(37, 37, 37);
+    width: 30%;
+    height: 100vh;
+    float: right;
+    box-shadow: -6px 3px 13px #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2021/08/18/19/26/background-6556413_640.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.backdrop {
+    background-color: rgba(160, 160, 160, 0.356);
+    backdrop-filter: blur(40px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logname {
+    font-size: clamp(40px,6.25vw,120px);
+    font-family: 'Rubik Bubbles';
+    margin-right: 20%;
+}
+
+.login {
+    font-family: 'Rubik Bubbles';
+    color: rgb(211, 211, 211);
+    font-size: clamp(20px,5.20833vw,100px);
+    margin-top: 7%;
+}
+
+#log {
+    width: 65%;
+    height: 4.5%;
+    border: none;
+    border-radius: 100000px;
+    display: flex;
+    text-align: center;
+    font-size: clamp(10px,1.82291vw,35px);
+    font-family: sans-serif;
+    border: solid 2px black;
+    margin-top: 5%;
+    box-shadow: 4px 4px 12px #000000;
+    transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+#log:focus {
+    border: solid 2px rgb(85, 164, 255);
+    outline: none;
+    box-shadow: 4px 4px 12px #0a81e2;
+}
+
+.logbtn {
+    margin-top: 8%;
+    width: 70%;
+    height: 5%;
+    border-radius: 140000px;
+    border: solid 2px black;
+    font-family: 'Rubik Bubbles';
+    font-size: clamp(15px,2.0833vw,35px);
+    transition: background-color 0.18s ease-in-out;
+    background-color: #bebebe;
+    box-shadow: 4px 4px 12px #0e0e0e;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logbtn:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.logbtn:active {
+    background-color: #e7e7e7;
+}
+
+.register {
+    font-family: 'Roboto';
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(10, 85, 172);
+    margin-top: 7%;
+    font-size: clamp(10px,1.197916vw,25px);
+}
